@@ -1,0 +1,5 @@
+export default {
+    SWITCH_TYPE: "SWITCH_TYPE",
+    CHANGE_FILTER: "CHANGE_FILTER",
+    CHANGE_PAGE: "CHANGE_PAGE"
+}

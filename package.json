@@ -1,0 +1,36 @@
+{
+  "name": "labracodetest",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "whatwg-mimetype": "^2.0.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drawmet/labracodeTest.git"
+  },
+  "author": "Drawmet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drawmet/labracodeTest/issues"
+  },
+  "homepage": "https://github.com/Drawmet/labracodeTest#readme"
+}
