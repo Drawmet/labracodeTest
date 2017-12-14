@@ -31,32 +31,37 @@ class CardItem extends Component{
     }
 
     render(){
-        const getComposition = this.props.getComposition;
-        const typeData = this.props.typeData;
-        const id = this.props.id;
+
+        const id = "rate_" + this.props.id;
+        const src = this.props.src;
+        const title = this.props.title;
+        const subtitle = this.props.subtitle;
+        const vote = this.props.vote;
+        const isOpen = this.state.isOpen;
+
         return (
             <div>
               <Col lg="6" sm="6">
                 <Card>
-                  <CardImg top width="100%" src={this.props.src} alt={this.props.title} />
+                  <CardImg top width="100%" src={src} alt={title} />
                     <CardBody>
-                      <CardTitle>{this.props.title}</CardTitle>
-                      <CardSubtitle>{this.props.subtitle}</CardSubtitle>
+                      <CardTitle>{title}</CardTitle>
+                      <CardSubtitle>{subtitle}</CardSubtitle>
                       <StarRatingComponent 
-                        name={"rate_" + this.props.id} 
+                        name={id} 
                         starCount={10}
-                        value={this.props.vote}
+                        value={vote}
                         />
-                      <p className="lead">{this.props.vote}</p>
-                      <Button onClick={this.handleClick}>{this.state.isOpen ? "Закрыть" : "Открыть"}</Button>
+                      <p className="lead">{vote}</p>
+                      <Button onClick={this.handleClick}>{isOpen ? "Закрыть" : "Открыть"}</Button>
                     </CardBody>
                 </Card>
               </Col>
               <Col>
-              {this.state.isOpen && this.props.composition.loaded ? <InfoBlock 
-                title={this.props.title} 
-                subtitle={this.props.subtitle} 
-                src={this.props.src}
+              {isOpen && this.props.composition.loaded ? <InfoBlock 
+                title={title} 
+                subtitle={subtitle} 
+                src={src}
                 composition={this.props.composition.data}
                 /> : <div></div>}
               </Col>
