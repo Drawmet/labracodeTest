@@ -41,7 +41,7 @@ class CardItem extends Component{
 
         return (
             <div>
-              <Col lg="6" sm="6">
+              <Col>
                 <Card>
                   <CardImg top width="100%" src={src} alt={title} />
                     <CardBody>
