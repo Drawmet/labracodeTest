@@ -1,31 +1,11 @@
-import actionsTypes from '../actions/actionsTypes';
+import { combineReducers } from 'redux';
 
-const initialState = {
-    data: '',
-    loaded: false,
-  };
+import content from './ContentReducer';
+import composition from './CompositionReducer';
 
-  
-let changeFilter = (state = initialState, action) => {
-    switch(action.type){
-        case actionsTypes.CHANGE_FILTER: 
-            return {
-                data: action.data,
-                loaded: true
-            };
-        case actionsTypes.SWITCH_TYPE: 
-            return {
-                data: action.data,
-                loaded: true
-            };
-        case actionsTypes.CHANGE_PAGE: 
-            return {
-                data: action.data,
-                loaded: true
-            };
-        default: 
-            return state;
-    }
-}
+const reducer = combineReducers({
+    data: content,
+    composition: composition,
+})
 
-export default changeFilter;
+export default reducer;

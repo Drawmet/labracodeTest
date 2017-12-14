@@ -9,3 +9,7 @@
 .card-body .btn{
     margin: 5px;
 }
+
+.card_block{
+    width: 100%;
+}

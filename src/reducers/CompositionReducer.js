@@ -7,7 +7,7 @@ const initialState = {
 
 let changePage = (state = initialState, action) => {
     switch(action.type){
-        case actionsTypes.CHANGE_PAGE: 
+        case actionsTypes.GET_DETAILS: 
             return {
                 data: action.data,
                 loaded: true

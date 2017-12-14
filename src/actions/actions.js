@@ -35,6 +35,28 @@ let actions = {
                 })
             })
         }
+    },
+    search(typeData, query, page){
+        return dispatch => {
+            api.getSearch(typeData, query)
+            .then((data) => {
+                dispatch({
+                    type: actionsTypes.SEARCH,
+                    data,
+                })
+            })
+        }
+    },
+    getComposition(typeData, id){
+        return dispatch => {
+            api.getDetails(typeData, id)
+                .then((data) => {
+                    dispatch({
+                        type: actionsTypes.GET_DETAILS,
+                        data
+                    })
+                })
+        }
     }
 }
 
