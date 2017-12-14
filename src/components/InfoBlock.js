@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import {Jumbotron} from 'reactstrap';
 import StarRatingComponent from 'react-star-rating-component';
 
+/* Full Info block for one of Item(movies or serials) */
+
 export default class InfoBlock extends Component {
-    
+
     render(){
 
         const title = this.props.title;

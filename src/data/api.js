@@ -1,6 +1,10 @@
 const API_KEY = '7b67f40e053a051fea40fb00e3885b06';
 const LANG = 'ru-RU';
 
+/* api fetch methods: getData for get content by type(movie or tv), by filter, and by number of page.
+    search for search by api and get back data by search.
+    getDetails for get movie or tv details by id*/
+
 let api = {
     getData(type = 'movie', filter = 'popular', page = '1'){
         return fetch(`https://api.themoviedb.org/3/${type}/${filter}?api_key=${API_KEY}&language=${LANG}&page=${page}`, {

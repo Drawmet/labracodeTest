@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pagination, PaginationItem, PaginationLink } from 'reactstrap';
-
+/* component pagination is navigation page for change pages  */
 export default class Example extends React.Component {
     constructor(props){
         super(props);

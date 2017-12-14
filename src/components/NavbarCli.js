@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Navbar, Nav, NavItem, NavLink} from 'reactstrap';
-
+//navigation bar for change type of data(movie and serials)
 export default class NavbarCli extends Component{
     constructor(props){
         super(props);

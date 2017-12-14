@@ -4,7 +4,9 @@ import { Card, CardImg, CardBody,
 import StarRatingComponent from 'react-star-rating-component';
 import './CardItem.css';
 import InfoBlock from './InfoBlock';
-  
+
+//Component with card for item(tv or movies)
+
 class CardItem extends Component{
     constructor(props){
         super(props);
